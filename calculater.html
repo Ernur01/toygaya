@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Заголовок страницы в браузере -->
+      <title>Калькулятор свадеб</title>
+
+      <!-- Style css -->
+      <link rel="stylesheet" href="style/calculater.css">
+      <link rel="stylesheet" href="style/rest.css">
+
+      <!-- Google Fonts (шрифты) -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+
+      <!-- Блок калькулятор -->
+      <div id="main" class="main_block">
+        <div class="main_block_main_container">
+          <div class="main_block_container">
+            <div class="mbc_top">
+              <h1>Онлайн калькулятор</h1>
+            </div>
+            <div class="mbc_center">
+              <div class="mbc_center_left">
+                <div class="mbc_center_left_content">
+                  <p>Выберите ведущего</p>
+                  <select id="vedushyi_select_id" name="vedushyi_select">
+                    <option value="250000">Аскар - 250 000тг</option>
+                    <option value="300000">Олег - 300 000тг</option>
+                    <option value="150000">Андрей - 150 000тг</option>
+                    <option value="500000">Ертуган - 500 000тг</option>
+                    <option value="400000">Ерлан - 400 000тг</option>
+                  </select>
+                </div>
+                <div class="mbc_center_left_content">
+                  <p>Выберите шоу программу</p>
+                  <select id="show_select_id" name="show_select">
+                    <option value="500000">Горяции танец - 500 000тг</option>
+                    <option value="450000">Екі жас - 450 000тг</option>
+                    <option value="650000">Это фокус шоу - 650 000тг</option>
+                    <option value="300000">Концерт шоу - 300 000тг</option>
+                  </select>
+                </div>
+                <div class="mbc_center_left_content">
+                  <p>Выберите ресторан</p>
+                  <select id="rest_select_id" name="rest_select">
+                    <option value="10000">Асем: за 1 человека 10 000тг</option>
+                    <option value="11000">Банкет: за 1 человека 11 000тг</option>
+                    <option value="8500">Жасылай: за 1 человека 8 500тг</option>
+                    <option value="15000">На вилле: за 1 человека 15 000тг</option>
+                  </select>
+                </div>
+                <div class="mbc_center_left_content">
+                  <p>Выберите кол-во гостей</p>
+                  <input id="gosti_select_id" name="gosti_select" type="text" placeholder="Например: 150" />
+                </div>
+              </div>
+              <div class="mbc_center_right">
+                <h2>Стоимость меропрития</h2>
+                <div>
+                  <p id="cost" style="margin-right: 5px;">0</p><p>тенге</p>
+                </div>
+                <div class="main_btn_1"><a onclick="cost_action()" href="#">Рассчитать стоимость</a></div>
+              </div>
+            </div>
+            <div class="mbc_bottom">
+              <div class="main_btn_1"><a onclick="cost_action()" href="#">Рассчитать стоимость</a></div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <form action="/action_page.php">
+        <h1>Login Form</h1>
+        <div class="formcontainer">
+        <hr/>
+        <div class="container">
+          <label for="uname"><strong>Имя</strong></label>
+          <input type="text" placeholder="" name="uname" required>
+          <label for="psw"><strong>Номер</strong></label>
+          <input type="password" placeholder="" name="psw" required>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+
+      <script src="scripts/script.js"></script>
+    </body>
+</html>
